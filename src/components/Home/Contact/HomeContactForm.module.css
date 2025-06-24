@@ -1,0 +1,12 @@
+.radioField {
+  margin-top: 15px;
+}
+
+.radioField p {
+  margin-bottom: 5px;
+  color: var(--color-black);
+}
+
+.radioField label {
+  color: var(--color-black);
+}

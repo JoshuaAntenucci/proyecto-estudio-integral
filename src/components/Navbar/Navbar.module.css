@@ -1,0 +1,138 @@
+.navbar {
+  /* width: 90%; */
+  height: 70px;
+  background: var(--color-main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  /* border-radius: 0 0 10px 10px; */
+  margin: 0 auto;
+}
+
+.navCheck:checked ~ .navLinks {
+  left: 0;
+}
+
+.navLinks .navLinkLogo {
+  display: none;
+}
+
+.navLinks ul {
+  display: flex;
+}
+
+.navLinks ul li a {
+  cursor: pointer;
+  color: var(--color-white);
+  display: block;
+  margin: 0 2px;
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+
+.navLinks ul li a:hover {
+  background: var(--color-white);
+  color: var(--color-main);
+}
+
+.navLinks ul li a.active {
+  background: var(--color-main);
+  color: var(--color-white);
+}
+
+.navLinks .navLinksHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks .navLinksHeader label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.hamburguer {
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.hamburguer:hover {
+  background: var(--color-white);
+}
+
+.hamburguer div {
+  width: 25px;
+  height: 2px;
+  margin: 6px 0;
+  background: var(--color-black);
+}
+
+.navLinksHeader {
+  display: none;
+}
+
+.navLinksHeader svg {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .navLinks {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    z-index: 999;
+    width: 280px;
+    height: 100vh;
+    background: var(--color-white);
+    transition: 0.2s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .navLinksHeader {
+    display: block;
+  }
+
+  .navLinksHeader svg {
+    display: block;
+  }
+
+  .navLinks .navLinkLogo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .navLinks ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .navLinks ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+}

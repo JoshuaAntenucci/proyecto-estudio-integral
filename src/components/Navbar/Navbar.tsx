@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <header>
         <Link href="/">
-          <Logo />
+          <Logo white />
         </Link>
       </header>
 

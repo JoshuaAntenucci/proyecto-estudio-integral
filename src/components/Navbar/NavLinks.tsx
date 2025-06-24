@@ -23,8 +23,8 @@ const NavLinks = () => {
       ) : (
         <>
           <li>
-            <ScrollLink to="features" smooth={true} duration={300}>
-              Beneficios
+            <ScrollLink to="services" smooth={true} duration={300}>
+              Servicios
             </ScrollLink>
           </li>
           <li>
@@ -32,11 +32,6 @@ const NavLinks = () => {
               Sobre Nosotros
             </ScrollLink>
           </li>
-          {/* <li>
-            <ScrollLink to="prices" smooth={true} duration={300}>
-              Precios
-            </ScrollLink>
-          </li> */}
           <li>
             <ScrollLink to="contact" smooth={true} duration={300}>
               Contacto

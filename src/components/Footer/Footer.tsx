@@ -1,3 +1,7 @@
+import { SiGooglemaps } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 import styles from "./Footer.module.css";
 
 import Logo from "@/components/Logo/Logo";
@@ -22,9 +26,15 @@ const Footer = () => {
         <h3>Contacto</h3>
 
         <ul>
-          <li>Dirección</li>
-          <li>Teléfono</li>
-          <li>Email</li>
+          <li>
+            <SiGooglemaps /> <p>Dirección</p>
+          </li>
+          <li>
+            <FaPhoneAlt /> <p>Teléfono</p>
+          </li>
+          <li>
+            <MdEmail /> <p>Email</p>
+          </li>
         </ul>
       </div>
     </footer>

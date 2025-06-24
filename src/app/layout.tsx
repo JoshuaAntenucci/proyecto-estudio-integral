@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Source_Sans_3 } from "next/font/google";
 import { Toaster } from "sonner";
 
 import "./globals.css";
@@ -7,13 +7,14 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const quicksand = Poppins({
+  variable: "--font-title",
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mulish = Source_Sans_3({
+  variable: "--font-text",
   subsets: ["latin"],
 });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${quicksand.variable} ${mulish.variable}`}>
         <Navbar />
 
         {children}
