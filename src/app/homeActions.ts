@@ -6,6 +6,9 @@ const registerSchema = z.object({
   firstname: z.string({ message: "Nombre inválido" }),
   lastname: z.string({ message: "Apellido inválido" }),
   email: z.string().email({ message: "Email inválido" }).trim(),
+  province: z.string().trim(),
+  payment: z.string().trim(),
+  city: z.string().trim(),
   phone: z
     .string()
     .min(5, {
@@ -16,8 +19,7 @@ const registerSchema = z.object({
     }),
   message: z
     .string()
-    .min(5, { message: "La contraseña debe contener 5 caractéres" }),
-  role: z.string(),
+    .min(5, { message: "La consulta debe contener 5 caractéres" }),
 });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -32,32 +34,41 @@ export async function contact(prevState: any, formData: FormData) {
     };
   }
 
-  console.log("Home Action");
+  const {
+    firstname,
+    lastname,
+    email,
+    phone,
+    message,
+    province,
+    city,
+    payment,
+  } = result.data;
 
-  // const { firstname, lastname, email, phone, message, role } = result.data;
+  const res = await fetch(process.env.GOOGLE_SCRIPT_URL || "", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      firstname,
+      lastname,
+      email,
+      phone,
+      message,
+      province,
+      city,
+      payment,
+    }),
+  });
 
-  // const res = await fetch(process.env.GOOGLE_SCRIPT_URL || "", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify({
-  //     firstname,
-  //     lastname,
-  //     email,
-  //     phone,
-  //     message,
-  //     role,
-  //   }),
-  // });
-
-  // if (!res.ok) {
-  //   return {
-  //     success: false,
-  //     msg: "Error al enviar formulario",
-  //     errors: {},
-  //   };
-  // }
+  if (!res.ok) {
+    return {
+      success: false,
+      msg: "Error al enviar formulario",
+      errors: {},
+    };
+  }
 
   return {
     success: true,

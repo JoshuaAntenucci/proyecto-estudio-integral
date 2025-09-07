@@ -19,7 +19,7 @@ const mulish = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Estudio Integral",
+  title: "Antenucci y Asociados",
   description: "Estudio integral",
 };
 

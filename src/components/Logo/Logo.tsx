@@ -8,14 +8,14 @@ const Logo = ({ white = false }: { white?: boolean }) => {
       <Image
         className={styles.image}
         src="/vercel.svg"
-        alt="Estudio Integral - Logo"
+        alt="Antenucci y Asociados - Isotipo"
         width={41}
         height={41}
         priority
       />
 
       <div className={white ? styles.whiteLogo : ""}>
-        <h2>Horizonte Jurídico</h2>
+        <h2>Antenucci y Asociados</h2>
         <h2>Estudio Integral</h2>
       </div>
     </div>

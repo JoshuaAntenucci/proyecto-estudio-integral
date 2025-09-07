@@ -9,7 +9,7 @@ const HomeAbout = () => {
         <Image
           className={styles.image}
           src="/about.jpg"
-          alt="Scuola di Vita - About"
+          alt="Antenucci y Asociados - About"
           width={6078}
           height={4052}
           priority

@@ -71,11 +71,16 @@
   background: var(--color-white);
 }
 
+.hamburguer:hover > div {
+  background: var(--color-main);
+}
+
 .hamburguer div {
   width: 25px;
   height: 2px;
   margin: 6px 0;
-  background: var(--color-black);
+  background: var(--color-white);
+  transition: 0.2s;
 }
 
 .navLinksHeader {
@@ -88,16 +93,16 @@
 
 @media screen and (max-width: 1100px) {
   .navbar {
-    width: 90%;
-    padding: 0 20px;
+    /* width: 90%; */
+    padding: 0 80px;
   }
 
   .navLinks {
     position: fixed;
-    left: -300px;
+    left: -370px;
     top: 0;
     z-index: 999;
-    width: 280px;
+    width: 370px;
     height: 100vh;
     background: var(--color-white);
     transition: 0.2s;
@@ -130,7 +135,19 @@
     margin-bottom: 5px;
     padding: 10px 15px;
     border-radius: 5px;
+    color: var(--color-black);
   }
+
+  /* .navLinks ul li a {
+  cursor: pointer;
+  color: var(--color-white);
+  display: block;
+  margin: 0 2px;
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+} */
 
   .hamburguer {
     display: block;

@@ -12,6 +12,20 @@
   color: var(--color-accent);
 }
 
+.cardContainer {
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardContainer h3 {
+  text-align: center;
+  font-size: 36px;
+  margin: 25px 0;
+  color: var(--color-accent);
+}
+
 .services {
   justify-content: space-between;
   display: flex;
@@ -20,7 +34,7 @@
 }
 
 .card {
-  width: 330px;
+  width: 200px; /* 330px */
   text-align: center;
   /* background: var(--color-black); */
   padding: 20px 15px;
@@ -49,4 +63,10 @@
   font-weight: 500;
   color: var(--color-main);
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+  .cardContainer {
+    padding: 0 20px;
+  }
 }

@@ -7,7 +7,8 @@ const HomeContact = () => {
     <section id="contact" className={styles.container}>
       <div className={styles.dataContainer}>
         <div className={styles.leftContainer}>
-          <h2>Contanos en qué te podemos ayudar</h2>
+          <h2>¿No sabés en qué campo encaja tu consulta?</h2>
+          <h3>Contanos en qué te podemos ayudar</h3>
 
           <p>Estamos listos para ofrecerte una solución clara y efectiva.</p>
           <p>
