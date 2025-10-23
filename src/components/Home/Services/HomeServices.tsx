@@ -18,8 +18,8 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Familia</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Divorcios, régimen de comunicación, cuota alimentaria, cuidado
+                personal de hijos, uniones convivenciales, adopciones, etc.
               </p>
             </div>
           </div>
@@ -31,8 +31,8 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Civil</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Incumplimientos de contrato, daños y perjuicios, desalojos,
+                cobros de deudas y otros asuntos civiles.
               </p>
             </div>
           </div>
@@ -44,8 +44,8 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Previsional</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Jubilaciones, pensiones, reajustes y reconocimientos de
+                servicios ante ANSES y otros organismos.
               </p>
             </div>
           </div>
@@ -57,8 +57,7 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Sucesiones</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Desde la apertura del trámite hasta la adjudicación de bienes.
               </p>
             </div>
           </div>
@@ -70,8 +69,8 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Tránsito</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Siniestros viales, infracciones, pérdida de licencia o defensa
+                ante multas.
               </p>
             </div>
           </div>
@@ -89,8 +88,10 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Gestión de Ambiente</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Asesoramos y acompañamos a empresas, instituciones y
+                particulares en el cumplimiento de normas ambientales,
+                evaluaciones de impacto, permisos y planes de gestión
+                sostenible.
               </p>
             </div>
           </div>
@@ -102,8 +103,9 @@ const HomeServices = () => {
               </div>
               <div className={styles.title}>Asesoramiento</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerun,
-                reprehenderit.
+                Orientación legal en conflictos ambientales, responsabilidad por
+                daños, uso del suelo, residuos y cumplimiento de la legislación
+                vigente para proteger el entorno y prevenir sanciones.
               </p>
             </div>
           </div>
