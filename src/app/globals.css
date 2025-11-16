@@ -2,7 +2,7 @@
   --color-white: #f7f9fa;
   --color-black: #2c2c2c;
   --color-grey: #b0b8be;
-  --color-main: #1f3b4d;
+  --color-main: rgba(10, 52, 38, 1); /*#1f3b4d*/
   --color-accent: #4c9071;
   --color-error: #fb4747;
 }

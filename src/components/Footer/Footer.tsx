@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
-        <Logo />
+        <Logo image={false} />
       </div>
 
       <div className={styles.about}>
@@ -27,13 +27,13 @@ const Footer = () => {
 
         <ul>
           <li>
-            <SiGooglemaps /> <p>Dirección</p>
+            <SiGooglemaps /> <p>Valle de Punilla, Córdoba, Argentina</p>
           </li>
           <li>
-            <FaPhoneAlt /> <p>Teléfono</p>
+            <FaPhoneAlt /> <p>351 - 3913779</p>
           </li>
           <li>
-            <MdEmail /> <p>Email</p>
+            <MdEmail /> <p>antenucci.asoc.integral@gmail.com</p>
           </li>
         </ul>
       </div>

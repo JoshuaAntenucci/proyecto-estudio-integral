@@ -19,8 +19,8 @@ const mulish = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Antenucci y Asociados",
-  description: "Estudio integral",
+  title: "Antenucci & Asociados",
+  description: "Estudio Jurídico Integral",
 };
 
 export default function RootLayout({
